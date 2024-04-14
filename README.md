@@ -1,2 +1,0 @@
-# tenzinite.github.io
-portfolio
