@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+        <title> my stuff & co </title>
+        <link rel="stylesheet" href="pf-styles.css"/>
+        <link rel="stylesheet" href="pf-mediaqueries.css"/>
+    </head>
+
+    <!--top nav box-->
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">my stuff & co</div>
+            <div> 
+                <ul class="nav-links">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="design.html">design</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="pf-about.html">about</a></li>
+                    <li><a href="pf-life.html">life, the universe and everything</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">portfolio</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="pf-index.html" onclick="toggleMenu()">home</a></li>
+                    <li><a href="design.html"onclick="toggleMenu()">design</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                    <li><a href="life">life, the universe and everything</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src='./pf-assets/profile.png' alt="Profile picture"/>
+            </div>
+
+            <div class="section__text">
+                <h1 class="title"> hello </h1>
+                <p class="section__text__p1">this page is just to post some things</p>
+                <p class="section__text__p1">i'm working on right now</p>
+                <br>
+                <div class="btn-container">
+                    <br>
+                    <button 
+                    class="btn btn-color-2"
+                    onclick="window.open('./pf-assets/mycv.pdf')">
+                    my cv   
+                    </button>
+                    <br>
+                    <br>
+                    <button
+                    class="btn btn-color-1"
+                    onclick="location.href='./#contact'">
+                    contact info
+                    </button>
+                </div>
+                <br>
+                <div id="social-container">
+                <img src="./pf-assets/linkedin.png" 
+                alt="linkedin profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/tenzinite/'"/>
+
+                <img src="./pf-assets/github.png" 
+                alt="linkedin profile"
+                class="icon" 
+                onclick="location.href='https://www.github.com/tenzinite'"/>
+            
+        </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">some info</p>
+            <h1 class="title">about me</h1>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="section-container">
+                        <div class="section__pic-container">
+                          <img
+                            src="./pf-assets/about-pic.png"
+                            alt="Profile picture"
+                            class="about-pic"
+                          />
+                        </div>
+                        <br>
+                    <div class="details-container">
+                        <img src="./pf-assets/experience.png" 
+                        alt="experience points" 
+                        class="icon"/>
+                        <h3>experience</h3>
+                        <p>front end development</p>
+                        <p>graphic design</p>
+                        <p>data analysis</p>
+
+                    </div>
+                </div>
+                <div class="details-container">
+                    <img src="./pf-assets/education.png"
+                    alt="education icon"
+                    class="icon"/>
+                    <h3>education</h3>
+                    <p>bsc in geoscience & japanese.</p>
+
+
+                </div>
+            </div>
+            <img src="./pf-assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./experience'">
+        </section>
+
+        <section id="experience">
+            <h1 class="title">experience</h1>
+            <div class="experience-details-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">digital</h2>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="./pf-assets/checkmark.png"
+                            alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h2>creative</h2>
+                                <h3>adobe creative suite</h3>
+                                <h3>corel draw</h3>
+                                <h3>sony vegas pro</h3>
+                                <br>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./pf-assets/checkmark.png"
+                            alt="experience icon"
+                            class="icon">
+                                <div>
+                                <h2>programming</h2>
+                                <h3>frontend development</h3>
+                                <h4>(html/css/javascript)</h3>
+                                <h3>python</h3>
+                                <h3>c++</h3>
+                                <br>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <img
+            src="./pf-assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"/>
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">under construction.</p>
+            <h1 class="title">projects</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./pf-assets/project-1.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">project 1</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./pf-assets/project-2.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">project 2</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./pf-assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"/>
+          </section>
+          <section id="contact">
+            <h1 class="title">contact</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./pf-assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">srai.w@outlook.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./pf-assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/tenzinite">linkedin</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="design.html">design</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="pf-about.html">about</a></li>
+                    <li><a href="pf-life.html">life, the universe and everything</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </footer>
+        <script src="pf-script.js"></script>
+    </body>
+
+</html>
