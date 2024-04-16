@@ -1,46 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charsets="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width-device-width, initial-scale-1.0" />
         <title> my stuff & co </title>
-        <link rel="stylesheet" href="pf-styles.css"/>
-        <link rel="stylesheet" href="pf-mediaqueries.css"/>
+        <link rel="stylesheet" href="mc-styles.css"/>
+        </meta>
+          <title> McCLUCKIN'</title>
+          <link 
+            rel="stylesheet" 
+            href="mc-styles.css">
+        </link>
+        <script src="mc-main.js"></script>
     </head>
-
-    <!--top nav box-->
     <body>
-        <nav id="desktop-nav">
-            <div class="logo">McCLUCKIN'</div>
-            <div> 
-                <ul class="nav-links">
-                    <li><a href="#home">home</a></li>
-                    <li><a href="design.html">design</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="pf-about.html">about</a></li>
-                    <li><a href="pf-life.html">life, the universe and everything</a></li>
-                    <li><a href="#contact">contact</a></li>
+      <header class="header">
+        <nav>
+            <div class="nav_header">
+                <div class="nav__logo">
+                    <a href="#">
+                      <img 
+                        src="./mc-assets/logo-dark.png"
+                        alt="logo" 
+                        class="nav_logo-dark" width="10%"
+                      />
+                      <img
+                        src="./mc-assets/logo-white.png" 
+                        alt="logo" 
+                        class="nav_logo-white"
+                      />
+                    </a>
+                  <div class="nav_menu_btn" id="menu__btn">
+                    <i class="ri-menu-search-line"></i>
+                  </div>
+                </div>
+                <ul class="nav__links" id="nav-links">
+                  <li><a href="./mccluckin/mc-index.html">HOME</a></li>
+                  <li><a href="./mccluckin/mc-index.html">DEAL</a></li>
+                  <li><a href="./mccluckin/mc-index.html">MENU</a></li>
+                  <li><a href="./mccluckin/mc-index.html">MERCH</a></li>
+                  <li><a href="./mccluckin/mc-index.html">EVENTS</a></li>
+                  <li><a href="./mccluckin/mc-index.html">CONTACT</a></li>
+                  <li><a href="./mccluckin/mc-index.html">CAREER</a></li>
+                  <li><a href=".mccluckin//mc-index.html">ABOUT</a></li>
                 </ul>
-            </div>
+
+            </nav></div>
         </nav>
-
-<!-- footer -->
-          <footer>
-            <nav>
-              <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#home">home</a></li>
-                    <li><a href="design.html">design</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="pf-about.html">about</a></li>
-                    <li><a href="pf-life.html">life, the universe and everything</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
+        <div class="section__container header__container" id="home">
+          <div class="header__image">
+            <img src="./mc-assets/header.png" alt="header" />
+          </div>
+          <div class="header__content">
+            <h2>HOME OF THE FRIED CHICKEN</h2>
+      </header>
+  
+      <section class="section__container order__container" id="menu">
+        <h3>ALWAYS TASTY CHICKEN</h3>
+        <h2 class="section__header">CHOOSE & ENJOY</h2>
+        <p class="section__description">
+          Whether you crave classic flavors or daring combinations, this is where
+          your culinary journey begins. Indulge your cravings and savor every bite
+          as you create your personalized CHICKEN experience with McCLUCKIN'.
+        </p>
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="./mc-assets/mc-food1.jpg" alt="order" />
+            <h4>Classic CHICKEN</h4>
+            <p>
+              Sink your teeth into the timeless perfection of our CHICKEN,
+              an experience that never goes out of style.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="./mc-assets/mc-food2.jpg" alt="order" />
+            <h4>Veggie Delight "CHICKEN"</h4>
+            <p>
+              Embrace the vibrant flavors of our Veggie Delight "CHICKEN", a
+              celebration of freshness and wholesome goodness. 
+              You won't even know that it's not chicken!
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="order__card">
+            <img src="./mc-assets/mc-food3.jpg" alt="order" />
+            <h4>HOT WINGS</h4>
+            <p>
+              Indulge in the bundle of fiery hot wings made with special herb blend that'll leave you wanting more.
+            </p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section__container event__container" id="event">
+        <div class="event__content">
+          <div class="event__image">
+            <img src="./mc-assets/mc-event.png" alt="event" />
+          </div>
+          <div class="event__details">
+            <h3>Discover</h3>
+            <h2 class="section__header">UPCOMING EVENTS</h2>
+            <p class="section__description">
+              From exclusive CHICKEN tastings and chef collaborations to community
+              outreach initiatives and seasonal celebrations, there's always
+              something special on the horizon at CHICKEN Company. Be the first to
+              know about our upcoming events, promotions, and gatherings as we
+              continue to bring joy and flavor to our cherished customers. Join us
+              in creating memorable moments and delicious memories together!
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="reservation" id="contact">
+        <div class="section__container reservation__container">
+          <h3>RESERVATION</h3>
+          <h2 class="section__header">BOOK YOUR TABLE</h2>
+          <form action="/">
+            <input type="text" placeholder="NAME" />
+            <input type="email" placeholder="EMAIL" />
+            <input type="date" placeholder="DATE" />
+            <input type="time" placeholder="TIME" />
+            <input type="number" placeholder="PEOPLE" />
+            <button class="btn" type="submit">FIND TABLE</button>
+          </form>
+        </div>
+        <img
+          src="./mc-assets/reservation-bg-1.png"
+          alt="reservation"
+          class="reservation__bg-1"
+        />
+        <img
+          src="./mc-assets/reservation-bg-2.png"
+          alt="reservation"
+          class="reservation__bg-2"
+        />
+      </section>
+  
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__logo">
+            <img src="mc-assets/logo-white.png" alt="logo" />
+          </div>
+          <div class="footer__content">
+            <p>
+              Welcome to McCLUCKIN', where passion for exceptional food and
+              genuine hospitality come together. Our story is one of dedication to
+              crafting the perfect CHICKEN experience, from sourcing the finest
+              ingredients to delivering unparalleled taste in every bite.
+            </p>
+            <div>
+              <ul class="footer__links">
+                <li>
+                  <span><i class="ri-map-pin-2-fill"></i></span>
+                  Spring, Texas, USA
+                </li>
+                <li>
+                  <span><i class="ri-mail-fill"></i></span>
+                  hello@mccluckin.com
+                </li>
+              </ul>
+              <div class="footer__socials">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-whatsapp-fill"></i></a>
               </div>
-            </nav>
-          </footer>
-        <script src="pf-script.js"></script>
-    </body>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 McCLUCKIN'.
+        </div>
+      </footer>
+  
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="mccluckins/mc-main.js"></script>
+      <script src="mccluckins/mc-slideshow.js"></script>
 
+  <!--these links are moved to the bottom of screen-->
+  <!--links-->
+  <a href="https://tenzinite.github.io/pf-index.html">home</a>
+  <a href="https://tenzinite.github.io/design.html">graphics design</a>
+ 
+
+  <!--larger projects-->
+  <a href="https://tenzinite.github.io/mc-index.html">mccluckin</a>
+</body>
 </html>
