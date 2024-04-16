@@ -9,7 +9,7 @@
   --white: #ffffff;
   --max-width: 1200px;
   --header-font-1: "Bebas Neue", serif;
-  --header-font-2: "Poppins", sans-serif;
+  --header-font-2: "Alfa Slab One", sans-serif;
 }
 
 * {
@@ -71,7 +71,7 @@ body {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
